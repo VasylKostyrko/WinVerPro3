@@ -1,0 +1,5 @@
+Траса	Умова коректності
+CP_I -> CP_1	m >= 0 and m > 0 -> 0 == 0 and m > 0
+CP_I -> CP_E	m >= 0 and -m >= 0 -> -m * n == 0
+CP_1 -> CP_1	-i0 * n + j0 == 0 and -i0 + m > 0 and -1 - i0 + m > 0 -> -i0 * n + j0 + n - n == 0 and -1 - i0 + m > 0
+CP_1 -> CP_E	-i0 * n + j0 == 0 and -i0 + m > 0 and 1 + i0 - m >= 0 -> j0 - m * n + n == 0

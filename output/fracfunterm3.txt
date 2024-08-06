@@ -1,0 +1,18 @@
+Statement
+def frac(x, y):
+    # CP_I: x >= 0 and y > 0
+    """Program computes quotient q and remainder r
+       in division x by y."""
+    r = x
+    q = 0
+    while y <= r:
+        # CP_1: x == q * y + r and x - q >= 0; x - q
+        r -= y
+        q += 1
+    return {"quotient": q, "remainder": r}
+    # CP_E: x == q * y + r and r < y
+
+res = frac(16, 3)
+print("quotient = " + str(res["quotient"]) + ", remainder = " + str(res["remainder"]))
+
+Annotated program has the right structure.

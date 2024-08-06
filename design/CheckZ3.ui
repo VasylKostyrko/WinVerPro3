@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>645</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CheckZ3</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>631</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="rowCount">
+    <number>4</number>
+   </property>
+   <property name="columnCount">
+    <number>1</number>
+   </property>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <column/>
+  </widget>
+  <widget class="QPushButton" name="btnCheck">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>10</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Перевірити умови верифікації програми</string>
+   </property>
+   <property name="text">
+    <string>Перевірити</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRes">
+   <property name="geometry">
+    <rect>
+     <x>166</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати результати перевірки умов велифікації програми</string>
+   </property>
+   <property name="text">
+    <string>Результати</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnConds">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>70</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Прочитати файл з умовами верифікації програми</string>
+   </property>
+   <property name="text">
+    <string>Умови</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOptions">
+   <property name="geometry">
+    <rect>
+     <x>347</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати системні параметри</string>
+   </property>
+   <property name="text">
+    <string>Параметри</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCEx">
+   <property name="geometry">
+    <rect>
+     <x>249</x>
+     <y>10</y>
+     <width>90</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Знайти контрприклад для еквірної умови</string>
+   </property>
+   <property name="text">
+    <string>Контрприклад</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

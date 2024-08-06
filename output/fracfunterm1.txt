@@ -1,0 +1,7 @@
+Параметр	Значення
+language	eng
+exdir	anprograms
+program	fracfunterm
+msglevel	1
+eqtrans	0
+usez3py	1

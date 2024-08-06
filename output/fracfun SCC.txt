@@ -1,0 +1,5 @@
+Траса	Спрощена умова коректності
+CP_I -> CP_1:	True
+CP_I -> CP_E:	True
+CP_1 -> CP_1:	True
+CP_1 -> CP_E:	True

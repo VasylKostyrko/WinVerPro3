@@ -1,0 +1,9 @@
+{
+    "language": {"uk": "Мова інтерфейсу", "en":  "Interface language"},
+    "exdir": {"uk": "Підкаталог анотованих програм", "en": "Subdirectory of annotated programs"},
+    "program": {"uk": "Ім'я анотованої програми", "en": "Annotated program name"},
+    "eqtrans": {"uk": "Застосовувати еквівалентні перетворення умов (1 - так, 0 - ні)",
+        "en": "Apply equivalent condition transformations (1 - Yes, 0 - No)"},
+    "usez3py": {"uk": "Використовувати розширення Z3py (1 - так, 0 - ні)",
+        "en": "Use the Z3py extension (1 - Yes, 0 - No)"}
+}

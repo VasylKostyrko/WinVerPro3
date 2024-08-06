@@ -1,0 +1,27 @@
+{
+    "program": "frac_fun_term_area",
+    "correctness": [
+        [
+            1,
+            true
+        ],
+        [
+            2,
+            true
+        ],
+        [
+            3,
+            true
+        ],
+        [
+            4,
+            true
+        ]
+    ],
+    "termination": [
+        [
+            3,
+            true
+        ]
+    ]
+}

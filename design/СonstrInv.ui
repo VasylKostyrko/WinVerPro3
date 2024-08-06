@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>817</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Invariant Construction</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>791</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="rowCount">
+    <number>4</number>
+   </property>
+   <property name="columnCount">
+    <number>1</number>
+   </property>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <column/>
+  </widget>
+  <widget class="QPushButton" name="btnProgram">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати анотовану програму та помилки</string>
+   </property>
+   <property name="text">
+    <string>Програма</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblFileName">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ім’я файлу:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ledFileName">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>481</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnFileDlg">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>10</y>
+     <width>21</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Вибрати анотовану програму</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnParams">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>40</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Ініціалізація змінних</string>
+   </property>
+   <property name="text">
+    <string>Параметри</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTracks">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>40</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Побудувати траси</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>Траси</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSymEx">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>40</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Символьне виконання вибраної траси</string>
+   </property>
+   <property name="text">
+    <string>Виконати</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnConds">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>70</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Продовжити символьне виконання траси</string>
+   </property>
+   <property name="text">
+    <string>Умови</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCP">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати контрольні точки програми</string>
+   </property>
+   <property name="text">
+    <string>КТ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPS">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати структуру програми</string>
+   </property>
+   <property name="text">
+    <string>СП</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCE">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати умови в контрольних точках</string>
+   </property>
+   <property name="text">
+    <string>УТ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCT">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати траси програми</string>
+   </property>
+   <property name="text">
+    <string>КШ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIV">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Ініціалізація змінних трас</string>
+   </property>
+   <property name="text">
+    <string>ІЗ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOptions">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>70</y>
+     <width>40</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Опції</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>70</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Зберегти поточну таблицю в текстовому файлі</string>
+   </property>
+   <property name="text">
+    <string>Зберегти</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAreas">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати області даних</string>
+   </property>
+   <property name="text">
+    <string>ОД</string>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTypes">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати типи змінних в КТ</string>
+   </property>
+   <property name="text">
+    <string>ТЗ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSVL">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати символьні значення змінних</string>
+   </property>
+   <property name="text">
+    <string>СЗ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnETC">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати кінцеву умову траси</string>
+   </property>
+   <property name="text">
+    <string>КУ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNext">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>70</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати можливі наступні траси</string>
+   </property>
+   <property name="text">
+    <string>Наступна</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>40</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Вибрати трасу</string>
+   </property>
+   <property name="text">
+    <string>Вибрати</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTCurCP">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>30</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Поточна КТ:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbCurCP">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>30</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Поточна КТ</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTCurTr">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>50</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Поточна траса:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbCurTr">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>50</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Поточна траса</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSympl">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>40</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Нормалізувати відношення</string>
+   </property>
+   <property name="text">
+    <string>Спростити</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNTC">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати нормалізовану кінцеву умову траси</string>
+   </property>
+   <property name="text">
+    <string>НУ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNTV">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>70</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Показати нормалізовані значення змінних в кінцевій точці траси</string>
+   </property>
+   <property name="text">
+    <string>НЗ</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

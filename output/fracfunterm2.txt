@@ -1,0 +1,5 @@
+Траса	Спрощена умова коректності
+CP_I -> CP_1	x >= 0 and y > 0 and x - y >= 0 -> x > 0
+CP_I -> CP_E	True
+CP_1 -> CP_1	q0 * y + r0 - x == 0 and y > 0 and r0 > 0 and -q0 + x >= 0 and r0 - 2 * y >= 0 -> r0 - y > 0 and -1 - q0 + x >= 0
+CP_1 -> CP_E	True
