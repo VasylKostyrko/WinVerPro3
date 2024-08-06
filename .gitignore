@@ -162,4 +162,5 @@ cython_debug/
 # KBC
 archive
 tests
+readme.docx
 ~readme.docx
