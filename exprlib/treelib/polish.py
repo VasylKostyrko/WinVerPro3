@@ -159,7 +159,7 @@ def dijkstra(mode, op, stackop, res):
                     stackop.append(op)
 
 
-def polish(expr, mode="a"):
+def expr_polish(expr, mode="a"):
     """Функція здійснює лексичний розбір виразу expr,
     записаного в інфіксній формі.
     Бінарні операції оточуються пропусками.

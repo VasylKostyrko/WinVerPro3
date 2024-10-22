@@ -1,6 +1,6 @@
 """Побудова дерев виразів"""
 
-from exprlib.treelib.polish import operation, polish, priority, unary
+from polish import operation, expr_polish, priority, unary
 
 
 class Tree():
@@ -101,7 +101,7 @@ def exprtree(expr, mode="a"):
     арифметичні вирази.
     Якщо mode = b, тоді у виразі
     допускаються також логічні операції."""
-    polexpr = polish(expr, mode)
+    polexpr = expr_polish(expr, mode)
     etree = poltree(polexpr)
     return etree
 
